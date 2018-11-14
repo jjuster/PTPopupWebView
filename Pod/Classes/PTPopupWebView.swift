@@ -339,7 +339,7 @@ open class PTPopupWebView : UIView {
         for attribute in [NSLayoutConstraint.Attribute.top, NSLayoutConstraint.Attribute.leading, NSLayoutConstraint.Attribute.bottom, NSLayoutConstraint.Attribute.trailing] {
             webViewContainer.addConstraint(
                 NSLayoutConstraint(
-                    item  : webViewContainer, attribute: attribute, relatedBy: NSLayoutRelation.equal,
+                    item  : webViewContainer, attribute: attribute, relatedBy: NSLayoutConstraint.Relation.equal,
                     toItem: webView,          attribute: attribute, multiplier: 1.0, constant: 0.0)
             )
         }
