@@ -336,7 +336,7 @@ open class PTPopupWebView : UIView {
         // Web view
         webView.translatesAutoresizingMaskIntoConstraints = false
         webViewContainer.addSubview(webView)
-        for attribute in [NSLayoutConstraint.Attribute.top, NSLayoutConstraint.Attribute.leading, NSLayoutConstraint.Attribute.bottom, NSLayoutAttribute.trailing] {
+        for attribute in [NSLayoutConstraint.Attribute.top, NSLayoutConstraint.Attribute.leading, NSLayoutConstraint.Attribute.bottom, NSLayoutConstraint.Attribute.trailing] {
             webViewContainer.addConstraint(
                 NSLayoutConstraint(
                     item  : webViewContainer, attribute: attribute, relatedBy: NSLayoutRelation.equal,
